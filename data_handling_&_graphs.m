@@ -1,0 +1,15 @@
+xvalues = [-10:0.05:10];
+yvaluesleft = sin(xvalues.*3)./(xvalues.*3);
+yvaluesright = sin(xvalues.*5) .* exp(-xvalues.^2./10);
+ly = tiledlayout(1, 2);
+nexttile;
+pleft = plot(yvaluesleft, '--');
+ylim([-1.5 1.5]);
+xlabel('X values');
+ylabel('Y values');
+nexttile;
+pright = plot(yvaluesright);
+ylim([-1.5 1.5]);
+pright.LineWidth = 2;
+xlabel('X values');
+ylabel('Y values');

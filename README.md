@@ -1,1 +1,1 @@
-![Graph Output](m1.png)
+![Graph Output](gaussian_plot.png)

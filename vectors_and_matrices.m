@@ -1,0 +1,11 @@
+A = [-3 2 5; 3 4 9; -4 1 6]
+b = [-3; 5; 6]
+c = A\b
+d = cross(b, c)
+E = rand(10, 10)
+Ainv = eye(3) / A
+Einv = eye(10)/E
+F = E * Einv
+g = Ainv(3, 3)
+h = det(A)
+m = sum(diag(A))
